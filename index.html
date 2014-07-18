@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Andrew Heart Andrea</title>
+	<title>Andrew &hearts; Andrea</title>
 	<link href='http://fonts.googleapis.com/css?family=Allura' rel='stylesheet' type='text/css'>
 	<style type="text/css">
 	body {
 		background-color: #FCF9D8;
 		margin: 0;
 		padding: 20px;
+        font-family: Allura, Sans-Serif;
+        font-size: 30px;
+        text-align: center;
 	}
 	.caption {
-		font-family: Allura, Sans-Serif;
-		font-size: 30px;
-		text-align: center;
 		margin: 20px 0;
 	}
 	.box {
 		position: relative;
-		width: 333px;
+        max-width: 85%;
 		padding: 20px;
 		margin: 0 auto;
 		background-color: #fff;
@@ -25,6 +25,12 @@
 		-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
 		box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
 	}
+    .tallbox {
+        width: 333px;
+    }
+    .widebox {
+        width: 500px;
+    }
 	.box:before, .box:after {
 		position: absolute;
 		width: 40%;
@@ -52,11 +58,20 @@
 		-o-transform: skew(5deg) rotate(5deg);
 		transform: skew(5deg) rotate(5deg);
 	}
+    .box img {
+        max-width: 100%;
+    }
 	</style>
 </head>
 <body>
-	<div class="box"><img src="wedding.png" alt="Andrew &amp; Andrea Shell October 20, 2012" /></div>
-	<div class="caption"><span>Andrew &amp; Andrea Shell</span><br />
-		October 20, 2012</div>
+    <h1>Andrew &hearts; Andrea</h1>
+
+	<div class="box tallbox"><img src="wedding.png" alt="Andrew &amp; Andrea Shell October 20, 2012"></div>
+	<div class="caption"><span>Andrew &amp; Andrea Shell</span><br>October 20, 2012</div>
+
+    <p>~~~</p>
+
+    <div class="box widebox"><img src="firsthouse.png" alt="First House May 24, 2013"></div>
+    <div class="caption"><span>First House</span><br>May 24, 2013</div>
 </body>
 </html>
